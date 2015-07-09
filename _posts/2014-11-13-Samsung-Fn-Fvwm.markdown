@@ -12,20 +12,31 @@ tags:
 (1),在“~/.Xmodmap”中写入：
 
 keycode 222 = XF86MonBrightnessDown
+
 keycode 223 = XF86MonBrightnessUp
+
 keycode 121 = F15
+
 keycode 122 = F16
+
 keycode 123 = F17
+
 keycode 237 = F18
+
 keycode 246 = F20
+
 
 
 (2),在“~/.fvwm/.fvwm2rc”中添加：
 
 Key XF86MonBrightnessDown A A Exec xbacklight -dec 10
+
 Key XF86MonBrightnessUp A A Exec xbacklight -inc 10
+
 key F15 A A Exec amixer set Master toggle
+
 key F16 A A Exec amixer set Master 10%-
+
 key F17 A A Exec amixer set Master 10%+
 
 
