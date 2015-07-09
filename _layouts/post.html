@@ -59,24 +59,35 @@ layout: default
     </span>
   </div>
 
-  {% include comments.markdown %}
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  <!-- BEGIN comment
-  <section class="comment">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES * * */
-      var disqus_shortname = 'qingxaojin';
-    
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  </section>
-  END comment -->
   {% endif %}
 </article>
+
+
+<div class="bshare-custom"><a title="åäº«å°æ°æµªå¾®å" class="bshare-sinaminiblog"></a><a title="åäº«å°Facebook" class="bshare-facebook"></a><a title="åäº«å°Twitter" class="bshare-twitter"></a><a title="æ´å¤å¹³å°" class="bshare-more bshare-more-icon more-style-addthis"></a></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=17304268-f570-4255-9088-f5132e6fd01b&amp;pophcol=1&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+ {% include comments.markdown %}
+<script type="text/javascript">
+$(function(){
+  $(document).keydown(function(e) {
+    if (e.target.nodeName.toUpperCase() != 'BODY') return;
+    var url = false;
+        if (e.which == 37 || e.which == 74) {  // Left arrow and J
+            {% if page.previous %}
+        url = '{{ site.url }}{{ page.previous.url }}';
+        {% endif %}
+        }
+        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
+            {% if page.next %}
+        url = '{{ site.url }}{{ page.next.url }}';
+        {% endif %}
+        }
+        if (url) {
+            window.location = url;
+        }
+  });
+})
+</script>
+
+
+
+
+
