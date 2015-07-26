@@ -1,0 +1,11 @@
+---
+title: 武松
+layout: post
+tags:
+  - photo
+  - daily
+---
+
+![](/media/files/2015/07/25/wusong.jpg)
+
+一万个耶稣也拯救不了我。
