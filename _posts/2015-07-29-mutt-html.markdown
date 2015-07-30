@@ -1,0 +1,15 @@
+---
+title: Mutt里正确显示html格式的邮件
+layout: post
+tags:
+  - mutt
+---
+
+在muttrc里面添加：
+> alternative_order text/plain text/enriched text/html   
+> auto_view text/html                                
+
+
+在$HOME文件夹下添加.mailcap文件，写入（选用w3m而非links是为了避免中文乱码）：
+> text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
