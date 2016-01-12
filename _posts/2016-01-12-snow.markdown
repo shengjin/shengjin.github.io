@@ -3,6 +3,7 @@ title: 摘樱桃
 layout: post
 tags:
   - photo
+  - daily
 ---
 
 ![](/media/files/2016/01/12/snow_0640.jpg)
