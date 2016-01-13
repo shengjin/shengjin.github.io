@@ -8,6 +8,7 @@ tags:
 > \#! /bin/bash
 
 > today=\`date +%Y-%m-%d\`
+
 > title=${today}.jpg
 
 > if [ -e $title ]
@@ -20,7 +21,7 @@ tags:
 
 >         wget http://cn.bing.com -O index.html
 
->         picture_url=\`cat index.html | grep -Po 'http://.*?jpg' | head -n1\`
+>         picture_url=`cat index.html | grep -Po 'http://.*?jpg' | head -n1`
 
 >         wget $picture_url -O $title
 
