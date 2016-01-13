@@ -3,6 +3,7 @@ title: 每天根据bing的图片更改桌布的bash脚本
 layout: post
 tags:
   - bash
+  - linux
 ---
 
 > \#! /bin/bash
