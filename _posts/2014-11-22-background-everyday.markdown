@@ -6,31 +6,33 @@ tags:
   - linux
 ---
 
-> \#! /bin/bash
+```
+#! /bin/bash
 
-> today=\`date +%Y-%m-%d\`
+today=`date +%Y-%m-%d`
 
-> title=${today}.jpg
+title=${today}.jpg
 
-> if [ -e $title ]
+if [ -e $title ]
 
-> then
+then
 
->         exit 1
+        exit 1
 
-> else
+else
 
->         wget http://cn.bing.com -O index.html
+        wget http://cn.bing.com -O index.html
 
->         picture_url=`cat index.html | grep -Po 'http://.*?jpg' | head -n1`
+        picture_url=`cat index.html | grep -Po 'http://.*?jpg' | head -n1`
 
->         wget $picture_url -O $title
+        wget $picture_url -O $title
 
->         convert $title /home/jin/.fvwm/images/wallpaper/background.png
+        convert $title /home/jin/.fvwm/images/wallpaper/background.png
 
->         rm index.html
+        rm index.html
 
-> fi
+fi
+```
 
 然后放到crontab里面，设成没小时执行一次
 
