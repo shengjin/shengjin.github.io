@@ -1,5 +1,5 @@
 ---
-title: 武侠连载（二）
+title: 霍普雷斯（二）
 layout: post
 tags:
   - story
