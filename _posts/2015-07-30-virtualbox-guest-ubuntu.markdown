@@ -2,7 +2,7 @@
 title: Virtualbox里为ubuntu虚拟机设置ShareFolder
 layout: post
 tags:
-  - Virtualbox
+  - virtualbox
 ---
 
 最近跟教程自学流体模拟，因为archlinux下pyro2运行中可视化显示不正常。
