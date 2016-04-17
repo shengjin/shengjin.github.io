@@ -1,5 +1,5 @@
 ---
-title: 摘樱桃
+title: VirtualBox为XP设置NAT网络
 layout: post
 tags:
   - virtualbox
