@@ -8,8 +8,11 @@ tags:
 
 莫名其妙中科院的邮箱发不出邮件了，之前25端口一直用的好好的。
 查找服务商的端口说明，更改到465端口，采用ssl+tls加密方式，结果怎么样都不成功。
+
 搜索一番，发现是如下原因：
+
 > The default is 25 ("smtp"), unless TLS without STARTTLS is used, in which case it is 465 ("smtps").
+
 所以，如果用465端口，需要在设置文件中加上 tls_starttls=off。
 （据说如果用 587端口，则需要tls_starttls=on）
 
