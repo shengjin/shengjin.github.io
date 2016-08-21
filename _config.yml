@@ -18,9 +18,9 @@ navigations:
   - title: About
     class: fa fa-user
     href: /about.html
-  - title: Movies
+  - title: Github
     class: fa fa-film
-    href: http://movie.douban.com/people/qingxiaojin/collect
+    href: https://github.com/shengjin
   - title: Subscribe
     class: fa fa-rss
     href: /atom.xml
