@@ -18,7 +18,7 @@ tags:
 
 我的想法是，对每个点进行抓邻居的游戏，即把所有距它临界距离内的点归为一组，
 然后把所有能串联起来的组归为一簇。于是，我用了一天的时间把这个算法用python实现了，
-核心程序还不到40行，运行结果见下图。程序源码见[GitHub](https://github.com/shengjin/cluster_partition)
+核心程序还不到40行，运行结果见下图。程序源码见[GitHub](https://github.com/shengjin/trace_clusters)
 
 ![](/media/files/2016/08/22/after.png)
 
